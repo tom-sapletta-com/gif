@@ -23,6 +23,24 @@ A file called demo.yml will be created in the current directory. You can open it
 
     terminalizer render demo
 
+### Watermark
+You can add a watermark logo to your generated GIF images.
+
+        watermark:
+          imagePath: AbsolutePathOrURL
+          style:
+            position: absolute
+            right: 15px
+            bottom: 15px
+            width: 100px
+            opacity: 0.9
+
+### Window frame
+
+    frameBox:
+      type: window
+      title: Terminalizer
+      style: []
 
 ## Server side images and animations generation with node
 http://jeremybouny.fr/en/articles/server_side_canvas_node/
